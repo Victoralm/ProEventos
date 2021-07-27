@@ -1,0 +1,7 @@
+{
+    // Exemplo de definição de uma versão específica do sdk para o projeto
+    // https://docs.microsoft.com/en-us/dotnet/core/tools/global-json?tabs=netcore3x
+    "sdk": {
+        "version": "3.1.403"
+    }
+}
