@@ -1,4 +1,5 @@
-<h1>Eventos do Component</h1>
+<h2>Eventos</h2>
+<hr />
 
 <!-- <p><b>Tema</b>: {{ eventos[0].Tema }}</p>
 <p><b>Local</b>: {{ eventos[0].Local }}</p>
@@ -8,8 +9,89 @@
 <p><b>Local</b>: {{ eventos[2].Local }}</p> -->
 
 <!-- Funciona como um Foreach -->
-<div *ngFor="let evento of eventos">
+<!-- <div *ngFor="let evento of eventos">
   <p><b>Tema</b>: {{ evento.tema }}</p>
   <p><b>Local</b>: {{ evento.local }}</p>
   <hr />
+</div> -->
+
+<div class="form-inline">
+  <div class="form-group mb-2">
+    <label class="mr-2">Filtro:</label>
+    <input
+      type="text"
+      class="form-control mr-2"
+      placeholder="buscar"
+      [(ngModel)]="ListFilter"
+    />
+    <!-- <button class="btn btn-outline-success">Buscar</button> -->
+  </div>
 </div>
+<!-- <h3>Filtro: {{ ListFilter }}</h3> -->
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>
+        <button
+          type="button"
+          class="btn btn-outline-light btn-sm"
+          (click)="toggleImg()"
+        >
+          {{ !showImg ? "Ocultar" : "Exibir" }}
+        </button>
+      </th>
+      <th>#</th>
+      <th>Tema</th>
+      <th>Local</th>
+      <th>Data</th>
+      <th>Qtd Pessoas</th>
+      <th>Lote</th>
+      <th>Opções</th>
+    </tr>
+  </thead>
+  <!-- Caso o objeto eventos exista e possua 1 ou mais elementos, popula a tbody -->
+  <tbody *ngIf="eventos && eventos.length">
+    <tr *ngFor="let evento of eventosFiltrados">
+      <td>
+        <!-- Definindo largura da imagem inline -->
+        <!-- <img src="assets/{{ evento.imagemURL }}" [style.width.px]="75"
+        alt="" /> -->
+
+        <!-- Definindo largura da imagem atravém de propriedade do component -->
+        <img
+          [collapse]="showImg"
+          [isAnimated]="true"
+          src="assets/{{ evento.imagemURL }}"
+          [style.width.px]="widthImgSmall"
+          [style.margin.px]="marginImgSmall"
+          alt=""
+        />
+      </td>
+      <td>{{ evento.eventoId }}</td>
+      <td>{{ evento.tema }}</td>
+      <td>{{ evento.local }}</td>
+      <td>{{ evento.dataEvento }}</td>
+      <td>{{ evento.qtdPessoas }}</td>
+      <td>{{ evento.lote }}</td>
+      <td>
+        <button type="button" class="btn btn-primary btn-sm mr-2">
+          Editar
+        </button>
+        <button type="button" class="btn btn-danger btn-sm">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+  <!-- Caso o objeto eventos não exista ou exista e não possua elementos, popula a tfoot -->
+  <tfoot *ngIf="!eventos || (eventos && !eventos.length)">
+    <tr>
+      <td colspan="8" class="text-center">
+        <h4>Nenhum evento encontrado...</h4>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- /**
+  * Exemplo de Filtro de Interpolação:
+{{ eventos | json }}
+*/ -->
