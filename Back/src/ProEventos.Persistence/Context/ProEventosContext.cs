@@ -21,8 +21,24 @@ namespace ProEventos.Persistence.Context
         /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // Definindo os Id externos (Foreign Keys) que geram o
+            // relacionamento entre as tabelas Eventos e Palestrantes
             modelBuilder.Entity<PalestranteEvento>()
                 .HasKey(PE => new { PE.EventoId, PE.PalestranteId });
+
+            // Definindo o Cascade On Delete para que quando um Evento for
+            // deletado, tenha as Redes Sociais associadas a ele também deletadas.
+            modelBuilder.Entity<Evento>()
+                        .HasMany(e => e.RedesSociais)
+                        .WithOne(rs => rs.Evento)
+                        .OnDelete(DeleteBehavior.Cascade);
+
+            // Definindo o Cascade On Delete para que quando um Palestrante for
+            // deletado, tenha as Redes Sociais associadas a ele também deletadas.
+            modelBuilder.Entity<Palestrante>()
+                        .HasMany(p => p.RedesSociais)
+                        .WithOne(rs => rs.Palestrante)
+                        .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
