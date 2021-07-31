@@ -6,6 +6,10 @@
 /* Importing Datepicker SCSS file. */
 @import "~ngx-bootstrap/datepicker/bs-datepicker";
 
-/* Importin fontawesome */
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+/* Importing fontawesome */
+// @import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/css/fontawesome.min";
 // @import "~fortawesome/";
+
+/* Importing Bootstrap Icons */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
