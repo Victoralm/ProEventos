@@ -1,4 +1,22 @@
-<h2>
-  {{ titulo }}
-</h2>
 <hr />
+
+<div class="d-flex p-3 my-3 text-white bg-secondary rounded shadow-sm">
+  <div class="d-flex align-items-center mr-auto">
+    <fa-icon
+      class="mr-3 titulo-icon-class"
+      [icon]="iconClass"
+      [classes]="['titulo-icon-class']"
+      [styles]="{
+        'font-size': '48px',
+        'margin-left': '10px'
+      }"
+    ></fa-icon>
+    <div class="lh-100">
+      <h2 class="mb-0">{{ titulo }}</h2>
+      <small>{{ subtitulo }}</small>
+    </div>
+  </div>
+  <div class="p-3" *ngIf="botaoListar">
+    <button class="btn btn-outline-light">Listar {{ titulo }}</button>
+  </div>
+</div>

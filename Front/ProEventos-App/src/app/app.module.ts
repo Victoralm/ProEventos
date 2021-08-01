@@ -42,6 +42,7 @@ import { PerfilComponent } from './components/perfil/perfil.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
     CollapseModule.forRoot(),
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),

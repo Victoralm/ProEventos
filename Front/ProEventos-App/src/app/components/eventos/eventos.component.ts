@@ -1,6 +1,6 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
 
-import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt, faEye, faEyeSlash, faPlusCircle, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { ToastrService } from 'ngx-toastr';
@@ -15,6 +15,13 @@ import { EventoService } from '../../services/evento.service';
 })
 export class EventosComponent implements OnInit {
 
+  // Fonts Awesome
+  faCalendarAlt = faCalendarAlt;
+  faPlusCircle = faPlusCircle;
+  faEye = faEye;
+  faEyeSlash = faEyeSlash;
+  faTrash = faTrash;
+  public faIcon: any[] = [];
   // modalRef: BsModalRef;  // Dá erro: Property 'modalRef' has no initializer and is not definitely assigned in the constructor
   modalRef = {} as BsModalRef;
 
@@ -86,6 +93,17 @@ export class EventosComponent implements OnInit {
    */
   public toggleImg(): void {
     this.showImg = !this.showImg;
+  }
+
+  /**
+   * toggleBtnImgAndText
+   */
+  public toggleBtnImgAndText(): any {
+    // let faIcon: string[] = [];
+    this.showImg ?
+      this.faIcon = [faEye, "Exibir"] :
+      this.faIcon = [faEyeSlash, "Ocultar"];
+    return this.faIcon;
   }
 
   // public GetEventos(): void {

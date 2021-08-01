@@ -8,8 +8,11 @@
 
 /* Importing fontawesome */
 // @import "~@fortawesome/fontawesome-free/scss/fontawesome";
-@import "~@fortawesome/fontawesome-free/css/fontawesome.min";
-// @import "~fortawesome/";
+// @import "~@fortawesome/fontawesome-free/css/fontawesome.min";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
 
 /* Importing Bootstrap Icons */
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+
+/* Importing Bootswatch */
+@import "~bootswatch/dist/cosmo/bootstrap";

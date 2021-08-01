@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faCoffee, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
