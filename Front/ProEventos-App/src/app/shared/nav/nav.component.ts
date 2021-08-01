@@ -1,3 +1,5 @@
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.scss'],
 })
 export class NavComponent implements OnInit {
-  constructor() {}
+
+  faUsers = faUser;
+
   isCollapsed = true;
-  ngOnInit(): void {}
+
+  constructor(private router: Router) { }
+
+  ngOnInit(): void { }
+
+  ShowMenu(): boolean {
+    return this.router.url != '/user/login';
+  }
 }

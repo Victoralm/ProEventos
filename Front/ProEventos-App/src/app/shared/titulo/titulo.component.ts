@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 
@@ -15,9 +16,13 @@ export class TituloComponent implements OnInit {
   @Input() subtitulo: string = 'Since 2021';
   @Input() botaoListar: boolean = false;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  listar(): void {
+    this.router.navigate([`/${this.titulo.toLowerCase()}/lista`]);
   }
 
 }
