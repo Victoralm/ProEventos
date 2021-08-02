@@ -1,12 +1,6 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import { faCalendarAlt, faEye, faEyeSlash, faPlusCircle, faTrash } from '@fortawesome/free-solid-svg-icons';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
-import { NgxSpinnerService } from 'ngx-spinner';
-import { ToastrService } from 'ngx-toastr';
-
-import { Evento } from '../../models/Evento';
-import { EventoService } from '../../services/evento.service';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-eventos',
