@@ -499,4 +499,7 @@ testem.log
 .DS_Store
 Thumbs.db
 
-/Arquivos_video7
+Arquivos_video7/
+Arquivos_video7.zip
+05-11+testandoControler.json
+.vscode/
