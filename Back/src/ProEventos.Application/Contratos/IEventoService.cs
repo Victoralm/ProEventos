@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using ProEventos.Domain;
+using ProEventos.Application.DTOs;
 
 namespace ProEventos.Application.Contratos
 {
@@ -11,7 +11,7 @@ namespace ProEventos.Application.Contratos
         /// </summary>
         /// <param name="model">Evento a ser gravado</param>
         /// <returns>Retorna o Id do novo registro armazenado em Eventos</returns>
-        Task<Evento> AddEventos(Evento model);
+        Task<EventoDto> AddEventos(EventoDto model);
 
         /// <summary>
         /// Responsável por intermediar, entre a API e a Persistencia, a
@@ -20,7 +20,7 @@ namespace ProEventos.Application.Contratos
         /// <param name="eventoId">Id do Evento a ser atualizado</param>
         /// <param name="model">Evento a ser atualizado</param>
         /// <returns>Retorna o Id do registro atualizado em Eventos</returns>
-        Task<Evento> UpdateEvento(int eventoId, Evento model);
+        Task<EventoDto> UpdateEvento(int eventoId, EventoDto model);
 
         /// <summary>
         /// Responsável pela remoção de registros pré-existentes em Eventos
@@ -36,7 +36,7 @@ namespace ProEventos.Application.Contratos
         /// <param name="includePalestrantes">Parâmetro opcional para incluir os
         /// registros associados de Palestrantes. Default: false</param>
         /// <returns>Retorna um array contendo todos os registros em Eventos</returns>
-        Task<Evento[]> GetAllEventosAsync(bool includePalestrantes = false);
+        Task<EventoDto[]> GetAllEventosAsync(bool includePalestrantes = false);
 
         /// <summary>
         /// Responsável por intermediar, entre a API e a Persistencia, a busca
@@ -48,7 +48,7 @@ namespace ProEventos.Application.Contratos
         /// registros associados de Palestrantes. Default: false</param>
         /// <returns>Retorna um array contendo todos os registros em Eventos,
         /// onde a coluna Tema possua o termo buscado</returns>
-        Task<Evento[]> GetAllEventosByTemaAsync(string tema, bool includePalestrantes = false);
+        Task<EventoDto[]> GetAllEventosByTemaAsync(string tema, bool includePalestrantes = false);
 
         /// <summary>
         /// Responsável por intermediar, entre a API e a Persistencia, a busca
@@ -58,6 +58,6 @@ namespace ProEventos.Application.Contratos
         /// <param name="includePalestrantes">Parâmetro opcional para incluir os
         /// registros associados de Palestrantes. Default: false</param>
         /// <returns></returns>
-        Task<Evento> GetEventoByIdAsync(int eventoId, bool includePalestrantes = false);
+        Task<EventoDto> GetEventoByIdAsync(int eventoId, bool includePalestrantes = false);
     }
 }

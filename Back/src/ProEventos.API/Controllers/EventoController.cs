@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ProEventos.Application.Contratos;
 using ProEventos.Domain;
-using ProEventos.Persistence.Context;
 using Microsoft.AspNetCore.Http;
+using ProEventos.Application.DTOs;
 
 namespace ProEventos.API.Controllers
 {
@@ -33,7 +31,9 @@ namespace ProEventos.API.Controllers
             try
             {
                 var eventos = await _eventoService.GetAllEventosAsync(true);
-                if(eventos == null) return NotFound("Nenhum evento encontrado");
+                // Retorna 204: Operação efetuada com sucesso mas sem conteúdo
+                // Ref: https://www.w3schools.com/tags/ref_httpmessages.asp
+                if(eventos == null) return NoContent();
 
                 return Ok(eventos);
             }
@@ -44,17 +44,6 @@ namespace ProEventos.API.Controllers
             }
         }
         // URL para testar no Postman: https://localhost:5001/api/Evento/
-
-        /**
-        [HttpGet("{id}")] // Rota Get, com parâmetro id
-        // Get by id
-        public IEnumerable<Evento> Get(int id)
-        {
-            // IEnumerable espera q o retorno seja um array
-            return _context.Eventos.Where(evento => evento.EventoId == id);
-        }
-        */
-        // URL para testar no Postman: https://localhost:5001/api/Evento/2
 
         [HttpGet("{id}")] // Rota Get, com parâmetro id
         // Get by id
@@ -95,14 +84,16 @@ namespace ProEventos.API.Controllers
         // URL para testar no Postman: https://localhost:5001/api/Evento/tema
 
         [HttpPost]
-        public async Task<IActionResult> Post(Evento model)
+        public async Task<IActionResult> Post(EventoDto model)
         {
             try
             {
-                var eventos = await _eventoService.AddEventos(model);
-                if(eventos == null) return BadRequest("Erro ao adicionar evento");
+                var evento = await _eventoService.AddEventos(model);
+                // Retorna 204: Operação efetuada com sucesso mas sem conteúdo
+                // Ref: https://www.w3schools.com/tags/ref_httpmessages.asp
+                if(evento == null) return NoContent();
 
-                return Ok(eventos);
+                return Ok(evento);
             }
             catch (Exception ex)
             {
@@ -113,14 +104,16 @@ namespace ProEventos.API.Controllers
         // URL para testar no Postman: https://localhost:5001/api/Evento/
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, Evento model)
+        public async Task<IActionResult> Put(int id, EventoDto model)
         {
             try
             {
-                var eventos = await _eventoService.UpdateEvento(id, model);
-                if(eventos == null) return BadRequest("Erro ao adicionar evento");
+                var evento = await _eventoService.UpdateEvento(id, model);
+                // Retorna 204: Operação efetuada com sucesso mas sem conteúdo
+                // Ref: https://www.w3schools.com/tags/ref_httpmessages.asp
+                if(evento == null) return NoContent();
 
-                return Ok(eventos);
+                return Ok(evento);
             }
             catch (Exception ex)
             {
@@ -135,13 +128,14 @@ namespace ProEventos.API.Controllers
         {
             try
             {
-                // if(await _eventoService.DeleteEvento(id))
-                //     return Ok("Evento deletado.");
-                // else
-                //     return BadRequest("Evento não deletado");
+                var evento = await _eventoService.GetEventoByIdAsync(id, true);
+                // Retorna 204: Operação efetuada com sucesso mas sem conteúdo
+                // Ref: https://www.w3schools.com/tags/ref_httpmessages.asp
+                if(evento == null) return NoContent();
+
                 return await _eventoService.DeleteEvento(id) ?
                                 Ok("Evento deletado.") :
-                                BadRequest("Evento não deletado");
+                                throw new Exception("Ocorreu um problema específico ao tentar deletar o evento");
             }
             catch (Exception ex)
             {
