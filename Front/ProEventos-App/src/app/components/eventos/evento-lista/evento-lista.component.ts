@@ -33,7 +33,8 @@ export class EventoListaComponent implements OnInit {
   public marginImgSmall = 2; // Notar que a atribuição de tipo é opcional
   public showImg: boolean = true;
   private _listFilter: string = ''; // Requer a importação de FormsModule (que requer "import { FormsModule } from '@angular/forms';") em "app.module.ts"
-  eventosFiltrados: Evento[] = [];
+  public eventosFiltrados: Evento[] = [];
+  public eventoId: number = 0;
 
 
 
@@ -83,7 +84,7 @@ export class EventoListaComponent implements OnInit {
    * @return void
    */
   public ngOnInit(): void {
-    this.GetEventos();
+    this.carregarEventos();
 
     /** spinner starts on init */
     this.spinner.show();
@@ -122,10 +123,17 @@ export class EventoListaComponent implements OnInit {
   //   );
   // }
 
+  // loadForm(model: Evento, template: any) {
+  //   this.dataEvento = this.DateTimeFormatPipe.transform(model.dataEvento, 'dd/MM/yyyy hh:mm');
+  //   this.openModal(template); this.modoEditar = true;
+  //   this.evento = model; this.registerForm.patchValue(this.evento);
+  //   this.registerForm.patchValue({ dataEvento: this.dataEvento });
+  // }
+
   /**
    * @returns void
    */
-  public GetEventos(): void {
+  public carregarEventos(): void {
     this.eventoService.getEventos().subscribe({
       next: (eventos: Evento[]) => {
         this.eventos = eventos;
@@ -140,13 +148,30 @@ export class EventoListaComponent implements OnInit {
     });
   }
 
-  openModal(template: TemplateRef<any>): void {
+  openModal(event: any, template: TemplateRef<any>, eventoId: number): void {
+    event.stopPropagation();
+    this.eventoId = eventoId;
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
   }
 
   confirm(): void {
     this.modalRef.hide();
-    this.toastr.success('Event deleted successfully!', 'Deleted');
+    this.spinner.show();
+    this.eventoService.deleteEvento(this.eventoId).subscribe({
+      // result -> Retorno do método Delete do controller da camada API
+      next: (result: any) => {
+        if (result.message == 'Evento deletado.') {
+          this.toastr.success('Event deleted successfully!', 'Deleted');
+          this.spinner.hide();
+          this.carregarEventos();
+        }
+      },
+      error: (error: any) => {
+        this.toastr.error(`Error deleting Event ${this.eventoId}...`, 'Error!');
+        this.spinner.hide();
+      },
+      complete: () => this.spinner.hide(),
+    });
   }
 
   decline(): void {
