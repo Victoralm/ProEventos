@@ -49,3 +49,7 @@ Thumbs.db
 *.db
 *.db-shm
 *.db-wal
+
+_courseResources/
+Back\src\ProEventos.API\ProEventos.db
+Back\src\doxygen.conf

@@ -137,7 +137,7 @@ export class EventoDetalheComponent implements OnInit {
   }
 
   /**
-   * Not work...
+   *
   public salvarAlteracao(): void {
     this.spinner.show();
     if (this.form.valid) {
@@ -146,7 +146,7 @@ export class EventoDetalheComponent implements OnInit {
                 ? {...this.form.value}
                 : {id: this.evento.id, ...this.form.value};
 
-      this.eventoService[`${this.estadoSalvar}`](this.evento).subscribe(
+      this.eventoService[this.estadoSalvar](this.evento).subscribe(
         () => this.toastr.success('Evento salvo com Sucesso!', 'Sucesso'),
         (error: any) => {
           console.error(error);
