@@ -14,7 +14,7 @@ namespace ProEventos.Persistence.Contratos
         /// Asynchronous get an array of all Eventos
         /// </summary>
         /// <param name="includePalestrantes">Checks if wants to include Palestrantes</param>
-        /// <returns></returns>
+        /// <returns>An array of all records of Evento</returns>
         Task<Evento[]> GetAllEventosAsync(bool includePalestrantes = false);
 
         /// <summary>

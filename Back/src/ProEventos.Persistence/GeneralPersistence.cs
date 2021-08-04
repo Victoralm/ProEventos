@@ -4,11 +4,21 @@ using ProEventos.Persistence.Contratos;
 
 namespace ProEventos.Persistence
 {
+    /// <summary>
+    /// Makes a generic approach on dealing with the tables on the DB
+    /// </summary>
     public class GeneralPersistence : IGeneralPersistence
     {
+        /// <summary>
+        /// Used to make a reference to the class ProEventos.Persistance.ProEventosContext
+        /// </summary>
         private readonly ProEventosContext _context;
 
-        // Injecting the context
+        /// <summary>
+        /// Receives a dependency injection of an object of type
+        /// ProEventos.Persistance.ProEventosContext
+        /// </summary>
+        /// <param name="context">An object of type ProEventos.Persistance.ProEventosContext</param>
         public GeneralPersistence(ProEventosContext context)
         {
             _context = context;
@@ -36,7 +46,7 @@ namespace ProEventos.Persistence
         }
         public async Task<bool> SaveChangesAsync()
         {
-            // If returns greater than zero
+            // Returns true If greater than zero
             return (await _context.SaveChangesAsync()) > 0;
         }
         #endregion

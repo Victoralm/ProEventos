@@ -1,5 +1,9 @@
 namespace ProEventos.Application.DTOs
 {
+    /// <summary>
+    /// Data Transfer Object class
+    /// Sets the standards to store records on the RedesSociais table
+    /// </summary>
     public class RedeSocialDto
     {
         public int Id { get; set; }

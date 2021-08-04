@@ -3,17 +3,22 @@ using ProEventos.Application.DTOs;
 
 namespace ProEventos.Application.Contratos
 {
+    /// <summary>
+    /// Intermediates the communications between the API and the Persistence
+    /// layers for records on the Lotes table.
+    /// </summary>
     public interface ILoteService
     {
 
         /// <summary>
         /// Uses
         /// ProEventos.Persistence.GeneralPersistence.SaveChangesAsync
-        /// to generate a new Lote record
+        /// to generate a new Lotes record
         /// </summary>
         /// <param name="eventoId">The Evento ID that the Lotes should associated with</param>
-        /// <param name="model">An object of type ProEventos.Application.DTOs.LoteDto</param>
-        /// <returns></returns>
+        /// <param name="model">An object of type
+        /// ProEventos.Application.DTOs.LoteDto to be stored</param>
+        /// <returns>The Id of the new record stored on the Lotes table</returns>
         Task AddLote(int eventoId, LoteDto model);
 
         /// <summary>

@@ -76,6 +76,9 @@ $(function() {
 <div class="title">ProEventos.API.Controllers.EventoController Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Responsible to receive the Lote objects HTTP requests to the Eventos objects  
+ <a href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ProEventos.API.Controllers.EventoController:</div>
 <div class="dyncontent">
@@ -86,28 +89,37 @@ Inheritance diagram for ProEventos.API.Controllers.EventoController:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adca55a56db69707265c324adae35bb65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#adca55a56db69707265c324adae35bb65">EventoController</a> (<a class="el" href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html">IEventoService</a> eventoService)</td></tr>
+<tr class="memdesc:adca55a56db69707265c324adae35bb65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a dependency injection of an object of type <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html" title="Responsible to mediate the interaction, relative to the records of Eventos, between the API and the P...">ProEventos.Application.EventoService</a>  <a href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#adca55a56db69707265c324adae35bb65">More...</a><br /></td></tr>
 <tr class="separator:adca55a56db69707265c324adae35bb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12ddc8a0e4ad2c53f83d55271570ef07"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#a12ddc8a0e4ad2c53f83d55271570ef07">Get</a> ()</td></tr>
+<tr class="memdesc:a12ddc8a0e4ad2c53f83d55271570ef07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the Eventos get request using <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#af8450f87b3e6d98644a5f560f28a2dd9" title="Uses ProEventos.Persistence.GeneralPersistence.GetAllEventosAsync to get an array of all records on E...">ProEventos.Application.EventoService.GetAllEventosAsync</a>  <a href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#a12ddc8a0e4ad2c53f83d55271570ef07">More...</a><br /></td></tr>
 <tr class="separator:a12ddc8a0e4ad2c53f83d55271570ef07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afee1eabdfa63cd20d86bad6e6e25da6c"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult&lt; <a class="el" href="../../d6/d74/class_pro_eventos_1_1_domain_1_1_evento.html">Evento</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#afee1eabdfa63cd20d86bad6e6e25da6c">Get</a> (int id)</td></tr>
+<tr class="memdesc:afee1eabdfa63cd20d86bad6e6e25da6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the Eventos get request by <em>id</em> , using <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#a29967ae7ceee4bdfe72281ea03a9554f" title="Uses ProEventos.Persistence.EventoPersistence.GetEventoByIdAsync to get a single record on the Evento...">ProEventos.Application.EventoService.GetEventoByIdAsync</a>  <a href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#afee1eabdfa63cd20d86bad6e6e25da6c">More...</a><br /></td></tr>
 <tr class="separator:afee1eabdfa63cd20d86bad6e6e25da6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61cd1d0bfbb519ee23275bc4c0517869"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#a61cd1d0bfbb519ee23275bc4c0517869">Get</a> (string tema)</td></tr>
+<tr class="memdesc:a61cd1d0bfbb519ee23275bc4c0517869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the Eventos get request by <em>tema</em> , using <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#ab5dada2d1f1b7ab5d912aede03bda1a2" title="Uses ProEventos.Persistence.EventoPersistence.GetAllEventosByTemaAsync to get an array of records on ...">ProEventos.Application.EventoService.GetAllEventosByTemaAsync</a>  <a href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#a61cd1d0bfbb519ee23275bc4c0517869">More...</a><br /></td></tr>
 <tr class="separator:a61cd1d0bfbb519ee23275bc4c0517869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeadf441e609e56f4cee8ed9bc9bb8083"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#aeadf441e609e56f4cee8ed9bc9bb8083">Post</a> (<a class="el" href="../../d3/d81/class_pro_eventos_1_1_application_1_1_d_t_os_1_1_evento_dto.html">EventoDto</a> model)</td></tr>
+<tr class="memdesc:aeadf441e609e56f4cee8ed9bc9bb8083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the Eventos post request using <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#a68bf7920e3bb0c1afabe7cdbf78c74ce" title="Uses ProEventos.Persistence.GeneralPersistence.SaveChangesAsync to generate a new Evento record Inter...">ProEventos.Application.EventoService.AddEventos</a>  <a href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#aeadf441e609e56f4cee8ed9bc9bb8083">More...</a><br /></td></tr>
 <tr class="separator:aeadf441e609e56f4cee8ed9bc9bb8083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a969ed82025da7310d6b969747eea4050"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#a969ed82025da7310d6b969747eea4050">Put</a> (int id, <a class="el" href="../../d3/d81/class_pro_eventos_1_1_application_1_1_d_t_os_1_1_evento_dto.html">EventoDto</a> model)</td></tr>
+<tr class="memdesc:a969ed82025da7310d6b969747eea4050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the Eventos put request by <em>id</em> , using <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#aca3cc3f0090a3eae4617e4dca177193a" title="Uses ProEventos.Persistence.GeneralPersistence.SaveChangesAsync to save a new Eventos record Intermed...">ProEventos.Application.EventoService.UpdateEvento</a>  <a href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#a969ed82025da7310d6b969747eea4050">More...</a><br /></td></tr>
 <tr class="separator:a969ed82025da7310d6b969747eea4050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0373bae005230b94295290f1c9923d1"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#aa0373bae005230b94295290f1c9923d1">Delete</a> (int id)</td></tr>
+<tr class="memdesc:aa0373bae005230b94295290f1c9923d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the Eventos delete request by <em>id</em> , using <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#a29967ae7ceee4bdfe72281ea03a9554f" title="Uses ProEventos.Persistence.EventoPersistence.GetEventoByIdAsync to get a single record on the Evento...">ProEventos.Application.EventoService.GetEventoByIdAsync</a> to verify if the record actually exists, and <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#aa509b02415cb77eb3b238ea656f16ad8" title="Uses ProEventos.Persistence.GeneralPersistence.Delete&lt;T&gt; to delete existing Eventos records Intermedi...">ProEventos.Application.EventoService.DeleteEvento</a> to delete it  <a href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#aa0373bae005230b94295290f1c9923d1">More...</a><br /></td></tr>
 <tr class="separator:aa0373bae005230b94295290f1c9923d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:af910dbe5d104af5a96f3f61b73c0827f"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html">IEventoService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#af910dbe5d104af5a96f3f61b73c0827f">_eventoService</a></td></tr>
+<tr class="memdesc:af910dbe5d104af5a96f3f61b73c0827f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to make a reference to the class <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html" title="Responsible to mediate the interaction, relative to the records of Eventos, between the API and the P...">ProEventos.Application.EventoService</a>  <a href="../../dd/de1/class_pro_eventos_1_1_a_p_i_1_1_controllers_1_1_evento_controller.html#af910dbe5d104af5a96f3f61b73c0827f">More...</a><br /></td></tr>
 <tr class="separator:af910dbe5d104af5a96f3f61b73c0827f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00019">19</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
+<div class="textblock"><p>Responsible to receive the Lote objects HTTP requests to the Eventos objects </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00023">23</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adca55a56db69707265c324adae35bb65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adca55a56db69707265c324adae35bb65">&#9670;&nbsp;</a></span>EventoController()</h2>
@@ -125,7 +137,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00023">23</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
+<p>Receives a dependency injection of an object of type <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html" title="Responsible to mediate the interaction, relative to the records of Eventos, between the API and the P...">ProEventos.Application.EventoService</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventoService</td><td>Object of type <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html" title="Responsible to mediate the interaction, relative to the records of Eventos, between the API and the P...">ProEventos.Application.EventoService</a></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00034">34</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
 
 </div>
 </div>
@@ -146,7 +166,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00127">127</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
+<p>Handles the Eventos delete request by <em>id</em> , using <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#a29967ae7ceee4bdfe72281ea03a9554f" title="Uses ProEventos.Persistence.EventoPersistence.GetEventoByIdAsync to get a single record on the Evento...">ProEventos.Application.EventoService.GetEventoByIdAsync</a> to verify if the record actually exists, and <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#aa509b02415cb77eb3b238ea656f16ad8" title="Uses ProEventos.Persistence.GeneralPersistence.Delete&lt;T&gt; to delete existing Eventos records Intermedi...">ProEventos.Application.EventoService.DeleteEvento</a> to delete it </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The Id of the Eventos record that should be deleted</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An Ok() response object (json) that contains a message</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00180">180</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
 
 </div>
 </div>
@@ -165,7 +194,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00029">29</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
+<p>Handles the Eventos get request using <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#af8450f87b3e6d98644a5f560f28a2dd9" title="Uses ProEventos.Persistence.GeneralPersistence.GetAllEventosAsync to get an array of all records on E...">ProEventos.Application.EventoService.GetAllEventosAsync</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>An Ok() response object (json) that contains an array of all Eventos records</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00046">46</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
 
 </div>
 </div>
@@ -185,7 +217,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00051">51</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
+<p>Handles the Eventos get request by <em>id</em> , using <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#a29967ae7ceee4bdfe72281ea03a9554f" title="Uses ProEventos.Persistence.EventoPersistence.GetEventoByIdAsync to get a single record on the Evento...">ProEventos.Application.EventoService.GetEventoByIdAsync</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the Eventos record to be returned</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An Ok() response object (json) that contains a single record from the Eventos table</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00072">72</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
 
 </div>
 </div>
@@ -205,7 +246,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00069">69</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
+<p>Handles the Eventos get request by <em>tema</em> , using <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#ab5dada2d1f1b7ab5d912aede03bda1a2" title="Uses ProEventos.Persistence.EventoPersistence.GetAllEventosByTemaAsync to get an array of records on ...">ProEventos.Application.EventoService.GetAllEventosByTemaAsync</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tema</td><td>Term to be searched on the Tema column of the Eventos records</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An Ok() response object (json) that contains an array of all records from the Eventos table that contains the searched value in the Tema column</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00098">98</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
 
 </div>
 </div>
@@ -225,7 +275,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00087">87</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
+<p>Handles the Eventos post request using <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#a68bf7920e3bb0c1afabe7cdbf78c74ce" title="Uses ProEventos.Persistence.GeneralPersistence.SaveChangesAsync to generate a new Evento record Inter...">ProEventos.Application.EventoService.AddEventos</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>An object of type <a class="el" href="../../d3/d81/class_pro_eventos_1_1_application_1_1_d_t_os_1_1_evento_dto.html" title="Data Transfer Object class Sets the standards to store records on the Eventos table">ProEventos.Application.DTOs.EventoDto</a> to be stored</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An Ok() response object (json) that contains the Id of the new record stored on the Eventos table</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00123">123</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
 
 </div>
 </div>
@@ -255,7 +314,17 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00107">107</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
+<p>Handles the Eventos put request by <em>id</em> , using <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#aca3cc3f0090a3eae4617e4dca177193a" title="Uses ProEventos.Persistence.GeneralPersistence.SaveChangesAsync to save a new Eventos record Intermed...">ProEventos.Application.EventoService.UpdateEvento</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The Id of the Eventos record that should be updated</td></tr>
+    <tr><td class="paramname">model</td><td>The content of the Eventos record that should be updated</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An Ok() response object (json) that contains the Id of the updated record</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00151">151</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
 
 </div>
 </div>
@@ -280,12 +349,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00021">21</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
+<p>Used to make a reference to the class <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html" title="Responsible to mediate the interaction, relative to the records of Eventos, between the API and the P...">ProEventos.Application.EventoService</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html#l00028">28</a> of file <a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>ProEventos.API/Controllers/<a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a></li>
+<li>src/ProEventos.API/Controllers/<a class="el" href="../../d7/d2b/_evento_controller_8cs_source.html">EventoController.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

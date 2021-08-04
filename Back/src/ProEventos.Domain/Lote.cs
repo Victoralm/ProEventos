@@ -1,6 +1,10 @@
 using System;
 namespace ProEventos.Domain
 {
+
+    /// <summary>
+    /// POCO class representing the DB table Lotes
+    /// </summary>
     public class Lote
     {
         public int Id { get; set; }

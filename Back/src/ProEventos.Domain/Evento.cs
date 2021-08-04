@@ -3,7 +3,10 @@ using System.Collections.Generic;
 
 namespace ProEventos.Domain
 {
-    // POCO class Evento
+
+    /// <summary>
+    /// POCO class representing the DB table Eventos
+    /// </summary>
     public class Evento
     {
         public int Id { get; set; }

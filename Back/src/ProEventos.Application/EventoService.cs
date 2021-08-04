@@ -8,10 +8,26 @@ using ProEventos.Persistence.Contratos;
 
 namespace ProEventos.Application
 {
+    /// <summary>
+    /// Responsible to mediate the interaction, relative to the records of Eventos,
+    /// between the API and the Persistence layers. Here are the auto-mappings
+    /// been done.
+    /// </summary>
     public class EventoService : IEventoService
     {
+        /// <summary>
+        /// Used to make a reference to the class ProEventos.Persistence.GeneralPersistence
+        /// </summary>
         private readonly IGeneralPersistence _generalPersistence;
+
+        /// <summary>
+        /// Used to make a reference to the class ProEventos.Persistence.EventoPersistence
+        /// </summary>
         private readonly IEventoPersistence _eventoPersistence;
+
+        /// <summary>
+        /// Used to make a reference to the class AutoMapper.IMapper
+        /// </summary>
         private readonly IMapper _mapper;
 
         public EventoService(

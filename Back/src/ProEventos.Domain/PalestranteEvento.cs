@@ -1,7 +1,7 @@
 namespace ProEventos.Domain
 {
     /// <summary>
-    /// Classe de associação, N para N, entre as classes Palestrante e Evento
+    /// Association class, N to N, between the tables Palestrantes e Eventos
     /// </summary>
     public class PalestranteEvento
     {
