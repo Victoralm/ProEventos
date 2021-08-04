@@ -7,11 +7,22 @@ using ProEventos.Persistence.Contratos;
 
 namespace ProEventos.Persistence
 {
+
+    /// <summary>
+    /// Responsible for actually dealing with the records on the DB table Eventos
+    /// </summary>
     public class EventoPersistence : IEventoPersistence
     {
+        /// <summary>
+        /// Used to make a reference to the class ProEventos.Persistance.ProEventosContext
+        /// </summary>
         private readonly ProEventosContext _context;
 
-        // Injecting the context
+        /// <summary>
+        ///Receives a dependency injection of an object of type
+        /// ProEventos.Persistance.ProEventosContext
+        /// </summary>
+        /// <param name="context">An object of type ProEventos.Persistance.ProEventosContext</param>
         public EventoPersistence(ProEventosContext context)
         {
             _context = context;

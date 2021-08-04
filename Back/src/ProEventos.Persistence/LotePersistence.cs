@@ -8,7 +8,7 @@ using ProEventos.Persistence.Contratos;
 namespace ProEventos.Persistence
 {
     /// <summary>
-    /// Responsible for actually dealing with the records on the DB table Lote
+    /// Responsible for actually dealing with the records on the DB table Lotes
     /// </summary>
     public class LotePersistence : ILotePersistence
     {

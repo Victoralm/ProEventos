@@ -2,6 +2,10 @@ using System.Collections.Generic;
 
 namespace ProEventos.Application.DTOs
 {
+    /// <summary>
+    /// Data Transfer Object class
+    /// Sets the standards to store records on the Palestrantes table
+    /// </summary>
     public class PalestranteDto
     {
         public int Id { get; set; }

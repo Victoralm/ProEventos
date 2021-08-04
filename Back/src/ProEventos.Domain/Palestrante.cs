@@ -2,6 +2,10 @@ using System.Collections.Generic;
 
 namespace ProEventos.Domain
 {
+
+    /// <summary>
+    /// POCO class representing the DB table Palestrantes
+    /// </summary>
     public class Palestrante
     {
         public int Id { get; set; }

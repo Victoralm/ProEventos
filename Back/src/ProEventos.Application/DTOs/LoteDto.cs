@@ -1,5 +1,9 @@
 namespace ProEventos.Application.DTOs
 {
+    /// <summary>
+    /// Data Transfer Object class
+    /// Sets the standards to store records on the Lotes table
+    /// </summary>
     public class LoteDto
     {
         public int Id { get; set; }

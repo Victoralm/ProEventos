@@ -44,6 +44,11 @@ export class EventoService {
   }
   */
 
+  /**
+   *
+   * @param evento
+   * @returns
+   */
   public post(evento: Evento): Observable<Evento> {
     return this.http
       .post<Evento>(this.baseURL, evento)
