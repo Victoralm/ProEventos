@@ -76,6 +76,9 @@ $(function() {
 <div class="title">ProEventos.Persistence.GeneralPersistence Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Makes a generic approach on dealing with the tables on the DB  
+ <a href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ProEventos.Persistence.GeneralPersistence:</div>
 <div class="dyncontent">
@@ -89,6 +92,7 @@ Inheritance diagram for ProEventos.Persistence.GeneralPersistence:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac71faa62063dc44a8e57e5e7734a14ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ac71faa62063dc44a8e57e5e7734a14ed">GeneralPersistence</a> (<a class="el" href="../../d1/daf/class_pro_eventos_1_1_persistence_1_1_context_1_1_pro_eventos_context.html">ProEventosContext</a> context)</td></tr>
+<tr class="memdesc:ac71faa62063dc44a8e57e5e7734a14ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a dependency injection of an object of type ProEventos.Persistance.ProEventosContext  <a href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ac71faa62063dc44a8e57e5e7734a14ed">More...</a><br /></td></tr>
 <tr class="separator:ac71faa62063dc44a8e57e5e7734a14ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5c06fdff85aeb263362e989f6a6a60b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ae5c06fdff85aeb263362e989f6a6a60b">Add&lt; T &gt;</a> (T entity)</td></tr>
 <tr class="memdesc:ae5c06fdff85aeb263362e989f6a6a60b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method Add as a generic type, with a generic typed parameter, where this type is a class  <a href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ae5c06fdff85aeb263362e989f6a6a60b">More...</a><br /></td></tr>
@@ -103,16 +107,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a563492921cbdd6cbfcd133bc367bcb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method DeleteRange as a generic type, with a generic parameter, where this type is a class  <a href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#a563492921cbdd6cbfcd133bc367bcb5d">More...</a><br /></td></tr>
 <tr class="separator:a563492921cbdd6cbfcd133bc367bcb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5af73293157151f6fbf893a3218493d"><td class="memItemLeft" align="right" valign="top">async Task&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ab5af73293157151f6fbf893a3218493d">SaveChangesAsync</a> ()</td></tr>
+<tr class="memdesc:ab5af73293157151f6fbf893a3218493d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync to save the changes to the DB  <a href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ab5af73293157151f6fbf893a3218493d">More...</a><br /></td></tr>
 <tr class="separator:ab5af73293157151f6fbf893a3218493d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ac9e39c613a983f23220c1b2b38b77345"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../d1/daf/class_pro_eventos_1_1_persistence_1_1_context_1_1_pro_eventos_context.html">ProEventosContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ac9e39c613a983f23220c1b2b38b77345">_context</a></td></tr>
+<tr class="memdesc:ac9e39c613a983f23220c1b2b38b77345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to make a reference to the class ProEventos.Persistance.ProEventosContext  <a href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ac9e39c613a983f23220c1b2b38b77345">More...</a><br /></td></tr>
 <tr class="separator:ac9e39c613a983f23220c1b2b38b77345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00007">7</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
+<div class="textblock"><p>Makes a generic approach on dealing with the tables on the DB </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00010">10</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac71faa62063dc44a8e57e5e7734a14ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac71faa62063dc44a8e57e5e7734a14ed">&#9670;&nbsp;</a></span>GeneralPersistence()</h2>
@@ -130,7 +137,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00012">12</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
+<p>Receives a dependency injection of an object of type ProEventos.Persistance.ProEventosContext </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>An object of type ProEventos.Persistance.ProEventosContext</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00022">22</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
 
 </div>
 </div>
@@ -169,7 +184,7 @@ Private Attributes</h2></td></tr>
 </dl>
 </div>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00018">18</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00028">28</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
 
 </div>
 </div>
@@ -207,7 +222,7 @@ Private Attributes</h2></td></tr>
 </dl>
 </div>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00028">28</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00038">38</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
 
 </div>
 </div>
@@ -245,7 +260,7 @@ Private Attributes</h2></td></tr>
 </dl>
 </div>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00033">33</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00043">43</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
 
 </div>
 </div>
@@ -264,9 +279,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Uses Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync to save the changes to the DB </p>
+<dl class="section return"><dt>Returns</dt><dd>A bool indicating if the procedure was successfully done</dd></dl>
+
 <p>Implements <a class="el" href="../../d8/d52/interface_pro_eventos_1_1_persistence_1_1_contratos_1_1_i_general_persistence.html#a5dc38df5cbb7ccf8b7b74ae9babb155d">ProEventos.Persistence.Contratos.IGeneralPersistence</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00037">37</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00047">47</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
 
 </div>
 </div>
@@ -304,7 +322,7 @@ Private Attributes</h2></td></tr>
 </dl>
 </div>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00023">23</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00033">33</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
 
 </div>
 </div>
@@ -329,12 +347,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00009">9</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
+<p>Used to make a reference to the class ProEventos.Persistance.ProEventosContext </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html#l00015">15</a> of file <a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>ProEventos.Persistence/<a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a></li>
+<li>src/ProEventos.Persistence/<a class="el" href="../../de/d5a/_general_persistence_8cs_source.html">GeneralPersistence.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

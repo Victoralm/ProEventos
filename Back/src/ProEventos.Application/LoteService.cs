@@ -10,7 +10,7 @@ using System.Linq;
 namespace ProEventos.Application
 {
     /// <summary>
-    /// Responsible to mediate the interaction, relative to the records of Lote,
+    /// Responsible to mediate the interaction, relative to the records of Lotes,
     /// between the API and the Persistence layers. Here are the auto-mappings
     /// been done.
     /// </summary>

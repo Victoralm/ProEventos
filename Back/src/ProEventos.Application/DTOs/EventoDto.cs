@@ -4,6 +4,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ProEventos.Application.DTOs
 {
+    /// <summary>
+    /// Data Transfer Object class
+    /// Sets the standards to store records on the Eventos table
+    /// </summary>
     public class EventoDto
     {
         public int Id { get; set; }

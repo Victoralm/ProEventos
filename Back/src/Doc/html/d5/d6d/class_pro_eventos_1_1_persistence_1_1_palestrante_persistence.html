@@ -76,6 +76,9 @@ $(function() {
 <div class="title">ProEventos.Persistence.PalestrantePersistence Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Responsible for actually dealing with the records on the DB table Palestrantes  
+ <a href="../../d5/d6d/class_pro_eventos_1_1_persistence_1_1_palestrante_persistence.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ProEventos.Persistence.PalestrantePersistence:</div>
 <div class="dyncontent">
@@ -89,6 +92,7 @@ Inheritance diagram for ProEventos.Persistence.PalestrantePersistence:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a01887f14750ed01cd0fdb234f8e431"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/class_pro_eventos_1_1_persistence_1_1_palestrante_persistence.html#a1a01887f14750ed01cd0fdb234f8e431">PalestrantePersistence</a> (<a class="el" href="../../d1/daf/class_pro_eventos_1_1_persistence_1_1_context_1_1_pro_eventos_context.html">ProEventosContext</a> context)</td></tr>
+<tr class="memdesc:a1a01887f14750ed01cd0fdb234f8e431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a dependency injection of an object of type ProEventos.Persistance.ProEventosContext  <a href="../../d5/d6d/class_pro_eventos_1_1_persistence_1_1_palestrante_persistence.html#a1a01887f14750ed01cd0fdb234f8e431">More...</a><br /></td></tr>
 <tr class="separator:a1a01887f14750ed01cd0fdb234f8e431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5e94d735757abda99cc8a6cd3c5e4a7"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="../../dc/dbd/class_pro_eventos_1_1_domain_1_1_palestrante.html">Palestrante</a>[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/class_pro_eventos_1_1_persistence_1_1_palestrante_persistence.html#ab5e94d735757abda99cc8a6cd3c5e4a7">GetAllPalestrantesAsync</a> (bool includeEventos=false)</td></tr>
 <tr class="memdesc:ab5e94d735757abda99cc8a6cd3c5e4a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous get an array of all Palestrantes  <a href="../../d5/d6d/class_pro_eventos_1_1_persistence_1_1_palestrante_persistence.html#ab5e94d735757abda99cc8a6cd3c5e4a7">More...</a><br /></td></tr>
@@ -103,11 +107,13 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:acb153dc3e7bc28982e3122f8bc71392c"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../d1/daf/class_pro_eventos_1_1_persistence_1_1_context_1_1_pro_eventos_context.html">ProEventosContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/class_pro_eventos_1_1_persistence_1_1_palestrante_persistence.html#acb153dc3e7bc28982e3122f8bc71392c">_context</a></td></tr>
+<tr class="memdesc:acb153dc3e7bc28982e3122f8bc71392c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to make a reference to the class ProEventos.Persistance.ProEventosContext  <a href="../../d5/d6d/class_pro_eventos_1_1_persistence_1_1_palestrante_persistence.html#acb153dc3e7bc28982e3122f8bc71392c">More...</a><br /></td></tr>
 <tr class="separator:acb153dc3e7bc28982e3122f8bc71392c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html#l00010">10</a> of file <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a>.</p>
+<div class="textblock"><p>Responsible for actually dealing with the records on the DB table Palestrantes </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html#l00013">13</a> of file <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1a01887f14750ed01cd0fdb234f8e431"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a01887f14750ed01cd0fdb234f8e431">&#9670;&nbsp;</a></span>PalestrantePersistence()</h2>
@@ -125,7 +131,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html#l00015">15</a> of file <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a>.</p>
+<p>Receives a dependency injection of an object of type ProEventos.Persistance.ProEventosContext </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>An object of type ProEventos.Persistance.ProEventosContext</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html#l00025">25</a> of file <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a>.</p>
 
 </div>
 </div>
@@ -157,7 +171,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d7/d60/interface_pro_eventos_1_1_persistence_1_1_contratos_1_1_i_palestrante_persistence.html#a8942e2a7fe5c4d0d505ba9d05244fada">ProEventos.Persistence.Contratos.IPalestrantePersistence</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html#l00021">21</a> of file <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html#l00031">31</a> of file <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a>.</p>
 
 </div>
 </div>
@@ -199,7 +213,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d7/d60/interface_pro_eventos_1_1_persistence_1_1_contratos_1_1_i_palestrante_persistence.html#ac42efe059703edafcb0184f3963066f8">ProEventos.Persistence.Contratos.IPalestrantePersistence</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html#l00036">36</a> of file <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html#l00046">46</a> of file <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a>.</p>
 
 </div>
 </div>
@@ -241,7 +255,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d7/d60/interface_pro_eventos_1_1_persistence_1_1_contratos_1_1_i_palestrante_persistence.html#a1b3239a2d1447039c069b36146f18498">ProEventos.Persistence.Contratos.IPalestrantePersistence</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html#l00052">52</a> of file <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html#l00062">62</a> of file <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a>.</p>
 
 </div>
 </div>
@@ -266,12 +280,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html#l00012">12</a> of file <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a>.</p>
+<p>Used to make a reference to the class ProEventos.Persistance.ProEventosContext </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html#l00018">18</a> of file <a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>ProEventos.Persistence/<a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a></li>
+<li>src/ProEventos.Persistence/<a class="el" href="../../d3/d67/_palestrante_persistence_8cs_source.html">PalestrantePersistence.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

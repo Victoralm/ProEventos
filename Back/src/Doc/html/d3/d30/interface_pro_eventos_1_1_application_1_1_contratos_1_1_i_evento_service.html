@@ -75,40 +75,44 @@ $(function() {
 <div class="title">ProEventos.Application.Contratos.IEventoService Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers for records on the Eventos table.  
+ <a href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ProEventos.Application.Contratos.IEventoService:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.png" usemap="#ProEventos.Application.Contratos.IEventoService_map" alt=""/>
   <map id="ProEventos.Application.Contratos.IEventoService_map" name="ProEventos.Application.Contratos.IEventoService_map">
-<area href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html" alt="ProEventos.Application.EventoService" shape="rect" coords="0,56,292,80"/>
+<area href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html" title="Responsible to mediate the interaction, relative to the records of Eventos, between the API and the P..." alt="ProEventos.Application.EventoService" shape="rect" coords="0,56,292,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a92ccd249bd95119075b1ee732097f4cc"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="../../d3/d81/class_pro_eventos_1_1_application_1_1_d_t_os_1_1_evento_dto.html">EventoDto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#a92ccd249bd95119075b1ee732097f4cc">AddEventos</a> (<a class="el" href="../../d3/d81/class_pro_eventos_1_1_application_1_1_d_t_os_1_1_evento_dto.html">EventoDto</a> model)</td></tr>
-<tr class="memdesc:a92ccd249bd95119075b1ee732097f4cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsável por intermediar, entre a <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> e a Persistencia, a geração de novos registros de Eventos  <a href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#a92ccd249bd95119075b1ee732097f4cc">More...</a><br /></td></tr>
+<tr class="memdesc:a92ccd249bd95119075b1ee732097f4cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses <a class="el" href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ab5af73293157151f6fbf893a3218493d" title="Uses Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync to save the changes to the DB">ProEventos.Persistence.GeneralPersistence.SaveChangesAsync</a> to generate a new Evento record Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers.  <a href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#a92ccd249bd95119075b1ee732097f4cc">More...</a><br /></td></tr>
 <tr class="separator:a92ccd249bd95119075b1ee732097f4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae31c78ff6e5a079509e1fa0fb39882c9"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="../../d3/d81/class_pro_eventos_1_1_application_1_1_d_t_os_1_1_evento_dto.html">EventoDto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#ae31c78ff6e5a079509e1fa0fb39882c9">UpdateEvento</a> (int eventoId, <a class="el" href="../../d3/d81/class_pro_eventos_1_1_application_1_1_d_t_os_1_1_evento_dto.html">EventoDto</a> model)</td></tr>
-<tr class="memdesc:ae31c78ff6e5a079509e1fa0fb39882c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsável por intermediar, entre a <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> e a Persistencia, a atualização de registros pré-existentes em Eventos  <a href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#ae31c78ff6e5a079509e1fa0fb39882c9">More...</a><br /></td></tr>
+<tr class="memdesc:ae31c78ff6e5a079509e1fa0fb39882c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses <a class="el" href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ab5af73293157151f6fbf893a3218493d" title="Uses Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync to save the changes to the DB">ProEventos.Persistence.GeneralPersistence.SaveChangesAsync</a> to save a new Eventos record Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers.  <a href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#ae31c78ff6e5a079509e1fa0fb39882c9">More...</a><br /></td></tr>
 <tr class="separator:ae31c78ff6e5a079509e1fa0fb39882c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5697eabe8c22f4085d22749fcc272e5f"><td class="memItemLeft" align="right" valign="top">Task&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#a5697eabe8c22f4085d22749fcc272e5f">DeleteEvento</a> (int eventoId)</td></tr>
-<tr class="memdesc:a5697eabe8c22f4085d22749fcc272e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsável pela remoção de registros pré-existentes em Eventos  <a href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#a5697eabe8c22f4085d22749fcc272e5f">More...</a><br /></td></tr>
+<tr class="memdesc:a5697eabe8c22f4085d22749fcc272e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses <a class="el" href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ac3374a90d3720c51155a50e14cdf7af8" title="Method Delete as a generic type, with a generic parameter, where this type is a class">ProEventos.Persistence.GeneralPersistence.Delete&lt;T&gt;</a> to delete existing Eventos records Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers.  <a href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#a5697eabe8c22f4085d22749fcc272e5f">More...</a><br /></td></tr>
 <tr class="separator:a5697eabe8c22f4085d22749fcc272e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa32eb834b91934257775ec7c3951bdba"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="../../d3/d81/class_pro_eventos_1_1_application_1_1_d_t_os_1_1_evento_dto.html">EventoDto</a>[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#aa32eb834b91934257775ec7c3951bdba">GetAllEventosAsync</a> (bool includePalestrantes=false)</td></tr>
-<tr class="memdesc:aa32eb834b91934257775ec7c3951bdba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsável por intermediar, entre a <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> e a Persistencia, a busca por todos os registros em Eventos  <a href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#aa32eb834b91934257775ec7c3951bdba">More...</a><br /></td></tr>
+<tr class="memdesc:aa32eb834b91934257775ec7c3951bdba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses ProEventos.Persistence.GeneralPersistence.GetAllEventosAsync to get an array of all records on Eventos table Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers.  <a href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#aa32eb834b91934257775ec7c3951bdba">More...</a><br /></td></tr>
 <tr class="separator:aa32eb834b91934257775ec7c3951bdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7856b6c6202d4f2936c676e538cca45"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="../../d3/d81/class_pro_eventos_1_1_application_1_1_d_t_os_1_1_evento_dto.html">EventoDto</a>[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#ab7856b6c6202d4f2936c676e538cca45">GetAllEventosByTemaAsync</a> (string tema, bool includePalestrantes=false)</td></tr>
-<tr class="memdesc:ab7856b6c6202d4f2936c676e538cca45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsável por intermediar, entre a <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> e a Persistencia, a busca por todos os registros em Eventos que possuam o termo buscado na coluna Tema  <a href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#ab7856b6c6202d4f2936c676e538cca45">More...</a><br /></td></tr>
+<tr class="memdesc:ab7856b6c6202d4f2936c676e538cca45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses <a class="el" href="../../d3/dfb/class_pro_eventos_1_1_persistence_1_1_evento_persistence.html#aae1ee37547e1c3e9fe5130c3371536d3" title="Asynchronous get an array of all Eventos by tema">ProEventos.Persistence.EventoPersistence.GetAllEventosByTemaAsync</a> to get an array of records on the Eventos table that contains the searched value in the Tema column Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers.  <a href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#ab7856b6c6202d4f2936c676e538cca45">More...</a><br /></td></tr>
 <tr class="separator:ab7856b6c6202d4f2936c676e538cca45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f699bc4214adbd66c973a845c464aa8"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="../../d3/d81/class_pro_eventos_1_1_application_1_1_d_t_os_1_1_evento_dto.html">EventoDto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#a3f699bc4214adbd66c973a845c464aa8">GetEventoByIdAsync</a> (int eventoId, bool includePalestrantes=false)</td></tr>
-<tr class="memdesc:a3f699bc4214adbd66c973a845c464aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsável por intermediar, entre a <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> e a Persistencia, a busca por um registro específico em Eventos. Filtrato pela Id do registro.  <a href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#a3f699bc4214adbd66c973a845c464aa8">More...</a><br /></td></tr>
+<tr class="memdesc:a3f699bc4214adbd66c973a845c464aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses <a class="el" href="../../d3/dfb/class_pro_eventos_1_1_persistence_1_1_evento_persistence.html#a80ef7e8863f990300ab1b0e385deb398" title="Asynchronous get an Evento by Id">ProEventos.Persistence.EventoPersistence.GetEventoByIdAsync</a> to get a single record on the Eventos table Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers.  <a href="../../d3/d30/interface_pro_eventos_1_1_application_1_1_contratos_1_1_i_evento_service.html#a3f699bc4214adbd66c973a845c464aa8">More...</a><br /></td></tr>
 <tr class="separator:a3f699bc4214adbd66c973a845c464aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d3/d31/_i_evento_service_8cs_source.html#l00006">6</a> of file <a class="el" href="../../d3/d31/_i_evento_service_8cs_source.html">IEventoService.cs</a>.</p>
+<div class="textblock"><p>Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers for records on the Eventos table. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d31/_i_evento_service_8cs_source.html#l00010">10</a> of file <a class="el" href="../../d3/d31/_i_evento_service_8cs_source.html">IEventoService.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a92ccd249bd95119075b1ee732097f4cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92ccd249bd95119075b1ee732097f4cc">&#9670;&nbsp;</a></span>AddEventos()</h2>
@@ -126,14 +130,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Responsável por intermediar, entre a <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> e a Persistencia, a geração de novos registros de Eventos </p>
+<p>Uses <a class="el" href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ab5af73293157151f6fbf893a3218493d" title="Uses Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync to save the changes to the DB">ProEventos.Persistence.GeneralPersistence.SaveChangesAsync</a> to generate a new Evento record Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">model</td><td>Evento a ser gravado</td></tr>
+    <tr><td class="paramname">model</td><td>An object of type <a class="el" href="../../d3/d81/class_pro_eventos_1_1_application_1_1_d_t_os_1_1_evento_dto.html" title="Data Transfer Object class Sets the standards to store records on the Eventos table">ProEventos.Application.DTOs.EventoDto</a> to be stored</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Retorna o Id do novo registro armazenado em Eventos</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The Id of the new record stored on the Eventos table</dd></dl>
 
 <p>Implemented in <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#a68bf7920e3bb0c1afabe7cdbf78c74ce">ProEventos.Application.EventoService</a>.</p>
 
@@ -155,14 +159,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Responsável pela remoção de registros pré-existentes em Eventos </p>
+<p>Uses <a class="el" href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ac3374a90d3720c51155a50e14cdf7af8" title="Method Delete as a generic type, with a generic parameter, where this type is a class">ProEventos.Persistence.GeneralPersistence.Delete&lt;T&gt;</a> to delete existing Eventos records Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">eventoId</td><td>Id do Evento a ser excluído</td></tr>
+    <tr><td class="paramname">eventoId</td><td>The Id of the Eventos record that should be deleted</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Retorna um bool indicando se a operação foi bem sucedida</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a bool indicating if the procedure was successfully done</dd></dl>
 
 <p>Implemented in <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#aa509b02415cb77eb3b238ea656f16ad8">ProEventos.Application.EventoService</a>.</p>
 
@@ -184,14 +188,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Responsável por intermediar, entre a <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> e a Persistencia, a busca por todos os registros em Eventos </p>
+<p>Uses ProEventos.Persistence.GeneralPersistence.GetAllEventosAsync to get an array of all records on Eventos table Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">includePalestrantes</td><td>Parâmetro opcional para incluir os registros associados de Palestrantes. Default: false</td></tr>
+    <tr><td class="paramname">includePalestrantes</td><td>Checks if should include the associated records on Palestrantes table. Default: false</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Retorna um array contendo todos os registros em Eventos</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns an array of all records on Eventos table</dd></dl>
 
 <p>Implemented in <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#af8450f87b3e6d98644a5f560f28a2dd9">ProEventos.Application.EventoService</a>.</p>
 
@@ -223,15 +227,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Responsável por intermediar, entre a <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> e a Persistencia, a busca por todos os registros em Eventos que possuam o termo buscado na coluna Tema </p>
+<p>Uses <a class="el" href="../../d3/dfb/class_pro_eventos_1_1_persistence_1_1_evento_persistence.html#aae1ee37547e1c3e9fe5130c3371536d3" title="Asynchronous get an array of all Eventos by tema">ProEventos.Persistence.EventoPersistence.GetAllEventosByTemaAsync</a> to get an array of records on the Eventos table that contains the searched value in the Tema column Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tema</td><td>Termo a ser buscado na coluna Tema</td></tr>
-    <tr><td class="paramname">includePalestrantes</td><td>Parâmetro opcional para incluir os registros associados de Palestrantes. Default: false</td></tr>
+    <tr><td class="paramname">tema</td><td>Term to be searched on the Tema column of the Eventos records</td></tr>
+    <tr><td class="paramname">includePalestrantes</td><td>Checks if should include the associated records on Palestrantes table. Default: false</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Retorna um array contendo todos os registros em Eventos, onde a coluna Tema possua o termo buscado</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An array of all records on Eventos table that contains the searched value in the Tema column</dd></dl>
 
 <p>Implemented in <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#ab5dada2d1f1b7ab5d912aede03bda1a2">ProEventos.Application.EventoService</a>.</p>
 
@@ -263,15 +267,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Responsável por intermediar, entre a <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> e a Persistencia, a busca por um registro específico em Eventos. Filtrato pela Id do registro. </p>
+<p>Uses <a class="el" href="../../d3/dfb/class_pro_eventos_1_1_persistence_1_1_evento_persistence.html#a80ef7e8863f990300ab1b0e385deb398" title="Asynchronous get an Evento by Id">ProEventos.Persistence.EventoPersistence.GetEventoByIdAsync</a> to get a single record on the Eventos table Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">eventoId</td><td>Id do Evento a ser localizado</td></tr>
-    <tr><td class="paramname">includePalestrantes</td><td>Parâmetro opcional para incluir os registros associados de Palestrantes. Default: false</td></tr>
+    <tr><td class="paramname">eventoId</td><td>Id of the record on Eventos table to be searched</td></tr>
+    <tr><td class="paramname">includePalestrantes</td><td>Checks if should include the associated records on Palestrantes table. Default: false</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A single record on the Eventos table</dd></dl>
 
 <p>Implemented in <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#a29967ae7ceee4bdfe72281ea03a9554f">ProEventos.Application.EventoService</a>.</p>
 
@@ -303,22 +307,22 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Responsável por intermediar, entre a <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> e a Persistencia, a atualização de registros pré-existentes em Eventos </p>
+<p>Uses <a class="el" href="../../d4/daa/class_pro_eventos_1_1_persistence_1_1_general_persistence.html#ab5af73293157151f6fbf893a3218493d" title="Uses Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync to save the changes to the DB">ProEventos.Persistence.GeneralPersistence.SaveChangesAsync</a> to save a new Eventos record Intermediates the communications between the <a class="el" href="../../df/d18/namespace_pro_eventos_1_1_a_p_i.html">API</a> and the <a class="el" href="../../d2/d86/namespace_pro_eventos_1_1_persistence.html">Persistence</a> layers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">eventoId</td><td>Id do Evento a ser atualizado</td></tr>
-    <tr><td class="paramname">model</td><td>Evento a ser atualizado</td></tr>
+    <tr><td class="paramname">eventoId</td><td>The Id of the Eventos record that should be updated</td></tr>
+    <tr><td class="paramname">model</td><td>The content of the Eventos record that should be updated</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Retorna o Id do registro atualizado em Eventos</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The Id of the updated record</dd></dl>
 
 <p>Implemented in <a class="el" href="../../df/d01/class_pro_eventos_1_1_application_1_1_evento_service.html#aca3cc3f0090a3eae4617e4dca177193a">ProEventos.Application.EventoService</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>ProEventos.Application/Contratos/<a class="el" href="../../d3/d31/_i_evento_service_8cs_source.html">IEventoService.cs</a></li>
+<li>src/ProEventos.Application/Contratos/<a class="el" href="../../d3/d31/_i_evento_service_8cs_source.html">IEventoService.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -4,6 +4,10 @@ using ProEventos.Application.DTOs;
 
 namespace ProEventos.Application.Helpers
 {
+    /// <summary>
+    /// Responsible for the auto-mapping of the POCO classes into DTO classes
+    /// and vice-versa
+    /// </summary>
     public class ProEventosProfile : Profile
     {
         public ProEventosProfile()

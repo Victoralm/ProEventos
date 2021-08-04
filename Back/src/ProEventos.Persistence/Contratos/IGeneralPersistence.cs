@@ -33,6 +33,12 @@ namespace ProEventos.Persistence.Contratos
         /// <typeparam name="T">Generic type entity</typeparam>
         void DeleteRange<T>(T[] entity) where T: class;
 
+        /// <summary>
+        /// Uses
+        /// Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync
+        /// to save the changes to the DB
+        /// </summary>
+        /// <returns>A bool indicating if the procedure was successfully done</returns>
         Task<bool> SaveChangesAsync();
         #endregion
 

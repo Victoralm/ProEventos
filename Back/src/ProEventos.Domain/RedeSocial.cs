@@ -1,7 +1,9 @@
 
 namespace ProEventos.Domain
 {
-    // Pode pertencer tando ao Palestrante quanto ao Evento
+    /// <summary>
+    /// POCO class representing the DB table RedesSociais
+    /// </summary>
     public class RedeSocial
     {
         public int Id { get; set; }
