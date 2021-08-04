@@ -500,5 +500,5 @@ testem.log
 Thumbs.db
 
 _courseResources/
-Back\src\ProEventos.API\ProEventos.db
-Back\Doxyfile
+Back/src/ProEventos.API/ProEventos.db
+Back/Doxyfile
